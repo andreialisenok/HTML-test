@@ -1,0 +1,21 @@
+header.header
+	.container
+		.header__inner
+			a.header__logo(href=data.header.links.logo)
+				img(src="images/logo.png" alt="Logo")
+			button.header__burger.btn.js-burger(type="button")
+				span
+				span
+				span
+			nav.header__menu
+				ul.header__list(style="background-image: url(/images/menu-line.svg)")
+					each object, key in data.header.menu
+						li.header__item
+							a.header__link.js-to-anchor(
+								href=object.url
+								data-link=key
+							)
+								!= object.name
+
+				.header__clock
+					img(src="./images/clock.png" alt="clock")

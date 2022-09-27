@@ -1,0 +1,27 @@
+.scrollTop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 1000;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $red;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	background: $white;
+	cursor: pointer;
+
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: 12px;
+		height: 13px;
+		fill: none;
+	}
+}
+
+.show {
+	display: flex;
+}

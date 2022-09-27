@@ -1,0 +1,227 @@
+.home {
+	padding: 120px 0 50px;
+
+	&__human {
+		margin: 0 auto;
+		padding: 0 40px;
+		max-width: 200px;
+
+		@include desktop {
+			flex: 1 0 500px;
+			max-width: 500px;
+		}
+	}
+
+	&__hands {
+		text-align: center;
+	}
+
+	@include desktop {
+		padding: 250px 0 50px;
+	}
+}
+
+.about-me {
+	padding: 0 0 70px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+
+	&__bio {
+		margin: 0 0 20px;
+
+		@include desktop {
+			max-width: 600px;
+		}
+	}
+
+	&__title {
+		margin: 0 0 20px;
+		font-family: $font-secondary;
+		font-weight: 700;
+		font-size: 28px;
+
+		@include desktop {
+			font-size: 36px;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		@include desktop {
+			margin-left: 280px;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		gap: 20px;
+
+		a {
+			svg {
+				display: inline-block;
+				vertical-align: middle;
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+
+	@include desktop {
+		display: flex;
+		padding: 0 0 200px;
+	}
+}
+
+.experience {
+	&__item:not(:last-child) {
+		margin: 0 0 60px;
+	}
+
+	&__title {
+		margin: 0 0 20px;
+		font-family: $font-secondary;
+		font-size: 20px;
+	}
+
+	&__date {
+		margin: 0 0 10px;
+		color: $gray;
+	}
+
+	&__position {
+		margin: 0 0 10px;
+		font-family: $font-secondary;
+
+		svg {
+			display: inline-block;
+			vertical-align: middle;
+			width: 35px;
+			height: 20px;
+		}
+	}
+
+	&__company {
+		display: flex;
+		align-items: center;
+		margin: 0 0 10px;
+		gap: 8px;
+	}
+
+	&__desc {
+		margin: 0 0 10px;
+	}
+
+	&__link {
+		text-decoration: underline;
+		color: $blue;
+	}
+}
+
+.education {
+	&__title {
+		margin: 0 0 20px;
+		font-family: $font-secondary;
+		font-size: 20px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		gap: 20px;
+
+		@include desktop {
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex: 1 0 150px;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		span {
+			svg {
+				display: inline-block;
+				vertical-align: middle;
+				width: 35px;
+				height: 35px;
+			}
+		}
+
+		@include desktop {
+			flex: none;
+		}
+	}
+
+	&__position {
+		margin: 5px 0;
+		font-family: $font-secondary;
+		font-weight: 700;
+	}
+
+	@include desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.skills {
+	margin: 0 0 40px;
+	padding: 50px 0 0;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	&__title {
+		margin: 0 0 20px;
+		font-family: $font-secondary;
+		font-size: 20px;
+	}
+
+	&__list {
+		@include tablet {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+		}
+
+		@include desktop {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__subtitle {
+		margin: 0 5px;
+		font-family: $font-secondary;
+		font-weight: 700;
+	}
+
+	@include desktop {
+		padding: 200px 0 0;
+	}
+}
+
+.wrap {
+	margin: -30px 0 -10px;
+
+	@include desktop {
+		display: flex;
+		justify-content: space-between;
+	}
+}

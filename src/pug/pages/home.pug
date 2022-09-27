@@ -1,0 +1,157 @@
+main.home
+	.container
+		.home__inner
+			.home__about-me.about-me#about-me(style="background-image: url(/images/about-me-line.svg)")
+				.about-me__bio
+					h1.about-me__title
+						| Alisenok Andrei,
+						br
+						| Frontend Developer
+					p.about-me__desc
+						| I develop websites and applications. Working with React projects. I develop user interfaces for web projects, work with a library of custom components. Creation of high-quality and UX-optimized sites
+						| I work with company products, participate in their continuous improvement. I work with email HTML.
+				.about-me__contacts
+					a.about-me__email(href="andreialisenok@gmail.com")
+						| andreialisenok@gmail.com
+					a.about-me__phone(href="tel:+375-298516300")
+						| +375-29 8516300
+					p.about-me__city
+						| г. Минск
+					.about-me__socials
+						a(href="index.html")
+							+svg("fb")
+						a(href="index.html")
+							+svg("vk")
+						a(href="index.html")
+							+svg("tg")
+			.wrap
+				.home__experience.experience#resume
+					h2.experience__title
+						| Опыт работы
+					ul.experience__list
+						li.experience__item
+							p.experience__date
+								| 2019-2022
+							p.experience__position
+								| Frontend Developer
+								+svg("arteza-shape")
+							p.experience__company
+								span.sprite-arteza
+								span.experience__name
+									| Arteza
+								span.experience__country
+									| Miami, USA
+							p.experience__desc
+								| I develop websites and applications. Working with React projects. I develop user interfaces for web projects, work with a library of custom components. Creation of high-quality and UX-optimized sites
+								| I work with company products, participate in their continuous improvement. I work with email HTML.
+							a.experience__link(href="index.html")
+								| Arteza.com
+						li.experience__item
+							p.experience__date
+								| 2017-2019
+							p.experience__position
+								| Digital Designer
+								+svg("jcs-shape")
+							p.experience__company
+								span.sprite-jcs
+								span.experience__name
+									| J Creative Solutions
+								span.experience__country
+									| Minsk, Belarus
+							p.experience__desc
+								| Created visuals for digital marketing channels such as social media, promo web and online ads. Developed visual language from scratch or following the branding guidelines. Designed presentations for clients and indoor purposes.
+							a.experience__link(href="index.html")
+								| JCS
+						li.experience__item
+							p.experience__date
+								| 2015-2017
+							p.experience__position
+								| SEO Specialist
+								+svg("oz-shape")
+							p.experience__company
+								span.sprite-oz
+								span.experience__name
+									| OZ.by
+								span.experience__country
+									| Minsk, Belarus
+							p.experience__desc
+								| Improved website performance and user experience of the biggest online bookstore OZ in Belarus, being a part of the marketing team, I interpreted Google Analytics data to IT, content and marketing colleagues. Advised on tech and content optimization strategy, automated processes, provided reports, increased organic traffic up to 150%.
+							a.experience__link(href="index.html")
+								| OZ.by
+						li.experience__item
+							p.experience__date
+								| 2010-2015
+							p.experience__position
+								| Content Specialist
+								+svg("21vek-shape")
+							p.experience__company
+								span.sprite-21vek
+								span.experience__name
+									| 21vek.by
+								span.experience__country
+									| Minsk, Belarus
+							p.experience__desc
+								| Added and modified the product information, prepared images and text for the website, developed categories filters, ensure all info is correct in the catalogue with the goal of improving online shopper experience.
+							a.experience__link(href="#")
+								| 21vek.by
+				.home__human
+					img(src="./images/human.png" alt="human")
+				.home__education.education
+					h2.education__title
+						| Образование
+					ul.education__list
+						li.education__item
+							span
+								+svg("education-shape1")
+							span.education__position
+								| Interface Design: Web & Mobile
+							span.education__company-date
+								| IT-Academy, 2020
+						li.education__item
+							span
+								+svg("education-shape2")
+							span.education__position
+								| Fundamentals of Usability
+							span.education__company-date
+								| Skillshare, Oct 2018
+						li.education__item
+							span
+								+svg("education-shape3")
+							span.education__position
+								| SEO Specialist
+							span.education__company-date
+								| SARTOX Media, Jun-Aug 2012
+						li.education__item
+							span
+								+svg("education-shape4")
+							span.education__position
+								| Information Technology Software
+							span.education__company-date
+								| Belarusian State University of Informatics and Radioelectronics, 2011 - 2015 Bachelor’s degree
+
+			.home__skills.skills#skills(style="background-image: url(/images/skills-line.svg)")
+				h2.skills__title
+					| Навыки
+				ul.skills__list
+					li.skills__item
+						p.skills__subtitle
+							| Adobe Creative Suite
+						p.skills__text
+							| Photoshop, Illustrator, InDesign, XD, After Effects
+					li.skills__item
+						p.skills__subtitle
+							| Prototyping
+						p.skills__text
+							| Sketch, Figma, InVision, Marvel, Principle, Balsamiq
+					li.skills__item
+						p.skills__subtitle
+							| Additional
+						p.skills__text
+							| HTML, CSS, Google Analytics, Keynote, Miro
+					li.skills__item
+						p.skills__subtitle
+							| Languages
+						p.skills__text
+							| Conversational English and Native Russian
+			.home__hands
+				img(src="./images/hands.png" alt="hands")
